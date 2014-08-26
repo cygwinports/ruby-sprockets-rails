@@ -1,0 +1,15 @@
+inherit rubygem
+
+NAME="ruby-sprockets-rails"
+VERSION=2.1.3
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby Rails sprockets integration"
+DESCRIPTION="Sprockets is a Rack-based asset packaging system that concatenates
+and serves JavaScript, CoffeeScript, CSS, LESS, Sass, and SCSS."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_sprockets_rails_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_sprockets_rails_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
